@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @implementation ViewController
 
@@ -22,6 +23,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480)];
+    [imageView setImageWithURL:[NSURL URLWithString:@"http://labs.grupow.com/wp-content/uploads/2012/01/apple-retro.jpeg"]];
+    [self.view addSubview:imageView];
+    [imageView release];
 }
 
 - (void)viewDidUnload
