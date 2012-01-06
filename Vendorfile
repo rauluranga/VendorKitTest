@@ -1,0 +1,5 @@
+# Checks out the git repo and includes all the files found in the
+# AFNetworking folder in the repo. The require option is handy for
+# repo's that haven't created vendor libraries and pushed them to
+# VendorKit
+lib "DKRest", :git => "git://github.com/gowalla/AFNetworking.git", :require => "AFNetworking"
